@@ -24,7 +24,7 @@ public class Student extends Person{
 
     public void checkStudiedSubjects() {
         if (grades.size() < 3) {
-            throw new NotEnoughStudiedSubjectsException("Student is not studying enough subjects. Minimum required is 3.");
+            throw new NotEnoughStudiedSubjectsException("Student " + this.getName() + " is not studying enough subjects. Minimum required is 3.");
         }
     }
 
